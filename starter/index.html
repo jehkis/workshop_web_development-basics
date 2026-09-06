@@ -1,44 +1,144 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fi">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- TODO: Add a descriptive title for your page -->
-    <title></title>
-    
+    <title>Joona Jehkonen – Workshop 01</title>
+
     <!-- Laurea favicon -->
     <link rel="icon" href="./Laurea_favicon.png" type="image/png">
-    
-    <!-- Link to CSS file -->
-    <link rel="stylesheet" href="./css/styles.css">
+
+    <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-    <!-- TODO Task 3: Add navigation menu here -->
-    
-    
-    <!-- TODO Task 1: Add your main content here -->
-    <!-- Use  h2, p, and img tags -->
-     <h2>Jari Kovalainen</h2>
-    <main>
-        <section id="home">
-            <!-- Add your heading, subheading, paragraph, and image here -->
-            
-        </section>
-        
-        <!-- TODO Task 1 & 3: Add an about section -->
-        <section id="about">
-            
-        </section>
-        
-        <!-- TODO Task 4: Add contact form section here -->
-        <section id="contact">
-            
-        </section>
-    </main>
-    
-    <!-- Optional: Add a footer -->
-    <footer>
-        
-    </footer>
+    <nav class="site-nav">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="site-shell">
+        <main>
+            <section class="panel" id="home">
+                <p class="section-kicker">01 / Home</p>
+                <h1>Joona Jehkonen</h1>
+                <h2>Tietojenkäsittelyn opiskelija &amp; ohjaaja</h2>
+                <p>
+                    Moikka! Olen Joona, ja opiskelen tietojenkäsittelyä Laurean ammattikorkeakoulussa.
+                    Tämä sivu on Workshop 01 -harjoitus, jossa rakennetaan perussivu navigoinnilla,
+                    lomakkeella ja viikkolokilla.
+                </p>
+                <img src="images/20250708_213946.jpg" alt="Joona viettämässä kesäiltaa kalastuksen merkeissä">
+            </section>
+
+            <section class="panel" id="about">
+                <p class="section-kicker">02 / About</p>
+                <h2>Minusta</h2>
+                <p>
+                    Opintojen ohella työskentelen ohjaajana Rinnekodeilla. Vapaa-aika menee usein
+                    kuntosalilla, juostessa, PC-pelien parissa ja perheen sekä kalastuksen merkeissä.
+                </p>
+                <div class="mini-card">
+                    <h3>Kiinnostuksen kohteet</h3>
+                    <ul>
+                        <li>Verkkokehitys</li>
+                        <li>Urheilu</li>
+                        <li>Kalastus</li>
+                        <li>Perhe</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="panel" id="week-log">
+                <p class="section-kicker">03 / Viikkoloki</p>
+                <h2>Workshop 01 – Viikko 1</h2>
+
+                <div class="week-facts">
+                    <div>
+                        <span>Tunteja</span>
+                        <strong>8 h</strong>
+                    </div>
+                    <div>
+                        <span>Tehtäviä</span>
+                        <strong>5 / 5</strong>
+                    </div>
+                    <div>
+                        <span>Tila</span>
+                        <strong>Valmis</strong>
+                    </div>
+                </div>
+
+                <h3 class="chart-heading">Tunnit päivittäin</h3>
+                <ul class="chart">
+                    <li>
+                        <span class="chart-label">Ma</span>
+                        <span class="chart-bar" style="width: 40%;"></span>
+                        <span class="chart-value">2 h</span>
+                    </li>
+                    <li>
+                        <span class="chart-label">Ti</span>
+                        <span class="chart-bar" style="width: 30%;"></span>
+                        <span class="chart-value">1.5 h</span>
+                    </li>
+                    <li>
+                        <span class="chart-label">Ke</span>
+                        <span class="chart-bar" style="width: 10%;"></span>
+                        <span class="chart-value">0.5 h</span>
+                    </li>
+                    <li>
+                        <span class="chart-label">To</span>
+                        <span class="chart-bar" style="width: 50%;"></span>
+                        <span class="chart-value">2.5 h</span>
+                    </li>
+                    <li>
+                        <span class="chart-label">Pe</span>
+                        <span class="chart-bar" style="width: 30%;"></span>
+                        <span class="chart-value">1.5 h</span>
+                    </li>
+                </ul>
+
+                <h3>Lokimerkinnät</h3>
+                <div class="log-entry">
+                    <p class="log-meta">Ma – HTML-perusta</p>
+                    <p>Rakensin sivun peruspohjan: otsikot, kappaleet ja kuvan alt-tekstillä.</p>
+                </div>
+                <div class="log-entry">
+                    <p class="log-meta">Ti–Ke – Tyylittely</p>
+                    <p>Tein CSS:n taustalle, otsikoille ja kuville, ja valitsin väripaletin.</p>
+                </div>
+                <div class="log-entry">
+                    <p class="log-meta">To – Navigaatio &amp; lomake</p>
+                    <p>Lisäsin navigaatiopalkin ankkurilinkeillä ja yhteydenottolomakkeen kentät.</p>
+                </div>
+                <div class="log-entry">
+                    <p class="log-meta">Pe – Responsiivisuus</p>
+                    <p>Testasin sivua eri näyttökoilla ja lisäsin media queryt mobiilia varten.</p>
+                </div>
+            </section>
+
+            <section class="panel contact-panel" id="contact">
+                <p class="section-kicker">04 / Contact</p>
+                <h2>Ota yhteyttä</h2>
+                <p class="contact-intro">Jos haluat olla yhteydessä, laita viesti alle.</p>
+                <form class="contact-form">
+                    <label for="name">Nimi</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Sähköposti</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Viesti</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <input type="submit" value="Lähetä">
+                </form>
+            </section>
+        </main>
+    </div>
 </body>
+
 </html>
